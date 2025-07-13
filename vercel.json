@@ -1,3 +1,5 @@
 {
-  "outputDirectory": "Komito Pack/Komito"
+  "version": 2,
+  "buildCommand": "echo 'Static HTML - no build required'",
+  "outputDirectory": "public"
 } 

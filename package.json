@@ -4,9 +4,9 @@
   "description": "Komito Co-working HTML Template",
   "main": "index.html",
   "scripts": {
-    "start": "live-server --port=3000 --open=/Komito%20Pack/Komito/index.html --watch=/Komito%20Pack/Komito",
-    "dev": "live-server --port=3000 --open=/Komito%20Pack/Komito/index.html --watch=/Komito%20Pack/Komito --entry-file=/Komito%20Pack/Komito/index.html",
-    "serve": "live-server --port=8080 --open=/Komito%20Pack/Komito/index.html --watch=/Komito%20Pack/Komito"
+    "start": "live-server --port=3000 --open=/public/index.html --watch=/public",
+    "dev": "live-server --port=3000 --open=/public/index.html --watch=/public --entry-file=/public/index.html",
+    "serve": "live-server --port=8080 --open=/public/index.html --watch=/public"
   },
   "keywords": [
     "html",
