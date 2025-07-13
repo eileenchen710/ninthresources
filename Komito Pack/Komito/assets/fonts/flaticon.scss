@@ -1,0 +1,105 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6e11236a8a69b72d079a0bce1a2833cd") format("truetype"),
+url("./flaticon.woff?6e11236a8a69b72d079a0bce1a2833cd") format("woff"),
+url("./flaticon.woff2?6e11236a8a69b72d079a0bce1a2833cd") format("woff2"),
+url("./flaticon.eot?6e11236a8a69b72d079a0bce1a2833cd#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6e11236a8a69b72d079a0bce1a2833cd#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "email": "\f101",
+    "clock": "\f102",
+    "magnifying-glass": "\f103",
+    "phone-call": "\f104",
+    "right-arrow": "\f105",
+    "meeting": "\f106",
+    "wifi": "\f107",
+    "tray": "\f108",
+    "parking": "\f109",
+    "room": "\f10a",
+    "cctv": "\f10b",
+    "event": "\f10c",
+    "id-card": "\f10d",
+    "key": "\f10e",
+    "work-station": "\f10f",
+    "placeholder": "\f110",
+    "message": "\f111",
+    "computer": "\f112",
+    "chat": "\f113",
+    "plus-symbol": "\f114",
+);
+
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-meeting:before {
+    content: map-get($flaticon-map, "meeting");
+}
+.flaticon-wifi:before {
+    content: map-get($flaticon-map, "wifi");
+}
+.flaticon-tray:before {
+    content: map-get($flaticon-map, "tray");
+}
+.flaticon-parking:before {
+    content: map-get($flaticon-map, "parking");
+}
+.flaticon-room:before {
+    content: map-get($flaticon-map, "room");
+}
+.flaticon-cctv:before {
+    content: map-get($flaticon-map, "cctv");
+}
+.flaticon-event:before {
+    content: map-get($flaticon-map, "event");
+}
+.flaticon-id-card:before {
+    content: map-get($flaticon-map, "id-card");
+}
+.flaticon-key:before {
+    content: map-get($flaticon-map, "key");
+}
+.flaticon-work-station:before {
+    content: map-get($flaticon-map, "work-station");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-plus-symbol:before {
+    content: map-get($flaticon-map, "plus-symbol");
+}
