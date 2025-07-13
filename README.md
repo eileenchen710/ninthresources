@@ -22,6 +22,38 @@ npm run serve
 ### 访问项目
 启动后，浏览器会自动打开 `http://localhost:3000` 或 `http://localhost:8080`
 
+## 部署到Vercel
+
+### 方法1：通过Vercel Dashboard
+1. 将代码推送到GitHub仓库
+2. 访问 [Vercel Dashboard](https://vercel.com/dashboard)
+3. 点击 "New Project"
+4. 导入您的GitHub仓库
+5. 设置项目配置：
+   - **Framework Preset**: Other
+   - **Root Directory**: `Komito Pack/Komito`
+   - **Build Command**: 留空
+   - **Output Directory**: `.`
+6. 点击 "Deploy"
+
+### 方法2：使用Vercel CLI
+```bash
+# 安装Vercel CLI
+npm i -g vercel
+
+# 登录Vercel
+vercel login
+
+# 部署项目
+vercel
+
+# 生产环境部署
+vercel --prod
+```
+
+### 方法3：一键部署
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/eileenchen710/ninthresources.git&project-name=komito-co-working-template&root-directory=Komito%20Pack/Komito)
+
 ## 项目结构
 
 ```
@@ -64,4 +96,11 @@ Komito Pack/
 - Bootstrap
 - jQuery
 - Font Awesome
-- Owl Carousel 
+- Owl Carousel
+
+## 部署配置
+
+项目包含 `vercel.json` 配置文件，用于优化Vercel部署：
+- 自动设置根目录为 `Komito Pack/Komito`
+- 配置静态资源缓存
+- 优化路由设置 
