@@ -12,87 +12,8 @@ function gMap () {
             var mapZoom = $(this).data('map-zoom');
             var mapTitle = $(this).data('map-title');
 
-            // defined default style
-            var styles = [
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#444444"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#000"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 45
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f1f1f1"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    }
-                ];
+            // Use standard Google Maps theme (no custom styles)
+            var styles = [];
 
             
             // if zoom not defined the zoom value will be 15;
@@ -116,12 +37,6 @@ function gMap () {
                     lat: mapLat,
                     lng: mapLng,
                     title: mapTitle
-                });
-                map.addMarker({
-                    icon: iconPath,
-                    lat: 40.700843,         //you can
-                    lng: 40.700843,
-                    title: "New York"
                 });
             }
         });  

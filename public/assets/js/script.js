@@ -228,8 +228,8 @@
 			animateOut: 'fadeOut',
     		animateIn: 'fadeIn',
     		active: true,
-			smartSpeed: 1000,
-			autoplay: 6000,
+			smartSpeed: 500,
+			autoplay: 3000,
             navText: [ '<span class="fal fa-long-arrow-left"></span>', '<span class="fal fa-long-arrow-right"></span>' ],
             responsive:{
                 0:{

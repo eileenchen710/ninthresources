@@ -1,0 +1,125 @@
+/* Custom height fixes for consistent card heights */
+
+/* Fix client logo heights */
+.clients-section .clients-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.clients-section .clients-logo-box img {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Fix testimonial card heights */
+.testimonial-block-one .inner-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.testimonial-block-one .inner-box .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Fix service card heights in Labour Hire Solutions section */
+.service-section .service-block-one .inner-box {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-section .service-block-one .inner-box .icon-box {
+    margin-bottom: 20px;
+}
+
+.service-section .service-block-one .inner-box h4 {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix "What Sets 9th Resources Apart" feature card heights */
+.feature-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-section .feature-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-section .feature-block-one {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature-section .feature-block-one .inner-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature-section .feature-block-one .inner-box .image-box {
+    flex-shrink: 0;
+}
+
+.feature-section .feature-block-one .inner-box .lower-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 300px;
+}
+
+.feature-section .feature-block-one .inner-box .lower-content h3 {
+    flex-shrink: 0;
+}
+
+.feature-section .feature-block-one .inner-box .lower-content p {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.feature-section .feature-block-one .inner-box .lower-content .link {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* Fix licence card heights to 355px */
+.licence-block-one .inner-box {
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+}
+
+.licence-block-one .inner-box .content-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.licence-block-one .inner-box .content-box p {
+    flex: 1;
+}
+
+.licence-block-one .inner-box .content-box .btn-box {
+    margin-top: auto;
+}
+
+/* Hide all social media icons temporarily */
+.social-links,
+.footer-social {
+    display: none !important;
+}
